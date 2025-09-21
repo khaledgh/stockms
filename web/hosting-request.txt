@@ -1,0 +1,16 @@
+Subject: Request to Modify open_basedir PHP Setting
+
+Dear Hosting Provider,
+
+I am running a Yii2 PHP application on my hosting account and have encountered an issue with the open_basedir restriction. Currently, PHP can only access the web directory (/www/wwwroot/stock.linksbridge.top/web/) and /tmp/, but my application needs access to files in the parent directory.
+
+Could you please modify the open_basedir setting to include the entire application directory:
+
+open_basedir = "/www/wwwroot/stock.linksbridge.top/:/tmp/"
+
+This will allow my Yii2 application to function correctly while still maintaining security.
+
+Thank you for your assistance.
+
+Best regards,
+[Your Name]
