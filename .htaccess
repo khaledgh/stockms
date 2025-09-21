@@ -1,0 +1,14 @@
+# Redirect all requests to the web directory
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    
+    # If a directory or a file exists, use it directly
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    
+    # Otherwise forward it to web/index.php
+    RewriteRule ^(.*)$ web/$1 [L]
+    
+    # If the requested resource doesn't exist, use web/index.php
+    RewriteRule ^$ web/ [L]
+</IfModule>

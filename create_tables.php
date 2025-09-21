@@ -22,7 +22,7 @@ try {
     // You can add your table creation SQL statements here
     // For example:
     $sql = "
-    CREATE TABLE IF NOT EXISTS `user` (
+    CREATE TABLE IF NOT EXISTS `users` (
         `id` INT NOT NULL AUTO_INCREMENT,
         `username` VARCHAR(255) NOT NULL,
         `auth_key` VARCHAR(32) NOT NULL,
